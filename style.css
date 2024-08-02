@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.Home{
+    height: 100%;
+    width: 100%;
+    background-color: #3B141C;
+    padding-top: 80px;
+    
+
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: #3B141C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+   position: fixed;
+    z-index: 9;
+    top: 0;
+}
+
+.landingLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+   padding: 25px 18px;
+   cursor: pointer;
+}
+
+.landingLogo img{
+    margin-top: 5px;
+
+}
+
+.landingLogo h2{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.navContent{
+    width: 59%;
+    display: flex;
+    gap: 10px;
+}
+
+.navContent a{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+ .navContent :hover{              /* maintainance */
+    border-radius: 50px;
+    background-color:#F3961C ;
+}
+
+/* herosection------------  */
+
+.landingPage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 5vw; */
+}
+
+.landingPageRight{
+    width: 30%;
+    height: 100%;
+    margin:0px 60px;
+    margin-top: 70px;
+}
+
+.landingPageLeft{
+    height: 100%;
+    width: 66%;
+    position: relative;
+    margin: 50px 20px;
+}
+
+.landingPageLeft h2{
+    margin-top: 5.8vw;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.landingPageLeft span{
+    font-weight: 700;
+    font-size: 50px;
+    color: #F3961C;
+}
+
+.landingPageLeft p{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.landingPageLeft button{
+    margin-top: 40px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.landingPageLeft .landingOrder{
+    color: black;
+    background-color: #F3961C;
+    border: 2px solid #F3961C;
+    margin-right: 15px;
+}
+
+.landingOrder:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.landingBook:hover{
+    color: black;
+    background-color: #F3961C;
+    border: 2px solid #F3961C;
+}
+
+
+
+
+/* About us .......  */
+.About{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutLeft{
+   height: 100%; 
+   width: 50%;
+   padding-top: 7vw;
+}
+
+.aboutLeft p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5vw;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.aboutLeft span{
+    border-bottom: 5px solid #F3961C;
+    border-radius: 4px;
+}
+
+.aboutLeft h1{
+    font: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.aboutRight{
+    height: 100%;
+    width: 50%;
+}
+.aboutRight img{
+    padding: 1.9vw;
+    padding-left: 3vw;
+}
+
+
+
+/* services ........ 
+ */
+
+ .services{
+    padding-top: 2vw;
+    height: 200%;
+    width: 100%;
+    background-color: #252525;
+    color: white;
+ }
+
+.services h1{
+    padding-top: 5vw;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.borderU{
+    height: 5px;
+    /* width: 100%; */
+    background-color: orange;
+    margin-left:46%;
+    margin-right:46% ;
+    border-radius: 50px;
+}
+
+.mainServiceContainar{
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    padding: 50px 40px;
+}
+
+.serviceContainer{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 60px;
+    
+}
+
+.serviceContainer h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.serviceContainer p{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+ 
+.serviceContainer img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    object-position: center; 
+}
+
+
+
+
+/* Why Up.............  */
+.whyUs{
+    width: 100%;
+    height: 100%;
+    padding-top: 15vh;
+    background-color: #F2F2F2;
+}
+.whyUs h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.Inwhyus{
+    height: 300px;
+    width: 300px;
+    text-align: center;  
+}
+
+.whyuscontainar{
+    padding: 7.5vw 3.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.Inwhyus img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Inwhyus h2{
+    font-size: 25px;
+    padding: 25px 0;
+}
+
+
+/* ....... Gallery ...... 
+ */
+ .gallery{
+    height: 140%;
+    width: 100%;  
+    margin-top: 5vw;
+ }
+
+ .gallery h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+
+ }
+
+ .innerGallery{
+    margin-top: 4vw;
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    
+ }
+
+ .innerGallery img{
+    height: 270px;
+    width: 380px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+ }
+
+ .maingallery img:hover{
+   transform: scale(1.1);
+ }
+
+
+/* ........ Contact .....  */
+
+.contact{
+    height: 150%;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 7vw;
+    position: relative;
+}
+.contact h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.contactAddress{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainContactInfo{
+    height: 100%;
+    width: 65%;
+    padding-top: 2vw;
+}
+.mainContactInfo form{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.mainContactInfo label{
+    font-size: 18px;
+    margin-bottom: -25px;
+}
+
+.mainContactInfo input{
+    height: 50px;
+    width: 100%;
+    padding:0 15px;
+    border-radius: 10px;
+    border: 1.5px solid grey;
+    margin: 25px 0;
+
+}
+
+.mainContactInfo textarea{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    border:1.5px solid grey ;
+    padding: 10px 15px;
+
+}
+.mainContactInfo .submit{
+    width: 17%;
+    font-size: 18px;
+    border: 2px solid #3B141C;
+    background-color: #3B141C;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.submit:hover{
+    color: black;
+    background-color: transparent;
+}
+
+.sideContactInfo{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+
+}
+
+.shopAddress{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 40px 0;
+
+}
+
+.shopAddress i{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.add h3{
+    font-size: 25px;
+}
+.add h5{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+
+.footer{
+    height: 70%;
+    width: 100%;
+    background-color: #252525;
+    color: white;
+}
+
+.footContainar{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+.footimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footimg h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.usefulLinks{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 0;
+    
+}
+.usefulLinks a{
+    color: white;
+    font-size: 17px;
+    padding: 13px 0;
+}
+ 
+
+.contacts{
+    padding: 0px 0;
+}
+
+.contacts .shopAddress{
+    padding: 10px 0;
+}
+.contacts .shopAddress h3{
+    font-size: 17px;
+}
+
+.followIcons{
+    padding: 15px 0;
+    display: flex;
+    gap: 24px;
+   
+}
+
+.followIcons i{
+    font-size: 30px;
+}
+
+
+
+
